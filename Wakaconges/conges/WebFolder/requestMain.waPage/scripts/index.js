@@ -9,7 +9,8 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
-		$$('dialog1').displayDialog();
+
+		$$('component1').loadComponent('../addEmp.waComponent');
 		
 				
 	};// @lock
