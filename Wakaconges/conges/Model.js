@@ -3,6 +3,17 @@ guidedModel =// @startlock
 {
 	Employees :
 	{
+		login :
+		{
+			onGet:function()
+			{// @endlock
+				var tmp = this.lastName.split(" ");
+				var name=''
+				for(var i=0; i<tmp.length;i++)
+					name='.'+tmp[i].toLowerCase();
+				return this.firstName.toLowerCase()+name;
+			}// @startlock
+		},
 		methods :
 		{// @endlock
 			uploadPrg:function(size)
