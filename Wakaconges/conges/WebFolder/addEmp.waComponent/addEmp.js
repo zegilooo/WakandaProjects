@@ -10,15 +10,24 @@ function constructor (id) {
 	this.name = 'addEmp';
 	// @endregion// @endlock
 	var compFileUpload = $$(id+'_fileUpload1');
+	var empRole = $$(id+'_textField10');
+	var comboRole =$$(id+'_combobox1');
+	
 	
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
+	var combobox1 = {};	// @combobox
 	var submit_btn = {};	// @button
 	var image1 = {};	// @image
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	combobox1.change = function combobox1_change (event)// @startlock
+	{// @endlock
+		empRole.setValue(comboRole.getValue());
+	};// @lock
 
 	submit_btn.click = function submit_btn_click (event)// @startlock
 	{// @endlock
@@ -27,7 +36,6 @@ function constructor (id) {
 //			alert('The employee with the following informations has been correctly saved:/n - first name :'+$$(id+'_textField5').getValue()+'/n - last name :'+$$(id+'_textField6').getValue()+'');
 //			}
 //		});
-debugger;
 		var uploaded = compFileUpload.getFiles();
 		if(uploaded.length!=0){
 			compFileUpload.uploadFiles();
@@ -41,6 +49,7 @@ debugger;
 	};// @lock
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_combobox1", "change", combobox1.change, "WAF");
 	WAF.addListener(this.id + "_submit_btn", "click", submit_btn.click, "WAF");
 	WAF.addListener(this.id + "_image1", "click", image1.click, "WAF");
 	// @endregion// @endlock
