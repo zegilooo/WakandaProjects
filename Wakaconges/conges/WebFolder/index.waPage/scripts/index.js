@@ -3,6 +3,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 var component = $$('component1');
 
 // @region namespaceDeclaration// @startlock
+	var button2 = {};	// @button
 	var button5 = {};	// @button
 	var button6 = {};	// @button
 	var documentEvent = {};	// @document
@@ -11,6 +12,11 @@ var component = $$('component1');
 // @endregion// @endlock
 
 // eventHandlers// @lock
+
+	button2.click = function button2_click (event)// @startlock
+	{// @endlock
+		component.loadComponent('/pendingRequests.waComponent');
+	};// @lock
 
 	button5.click = function button5_click (event)// @startlock
 	{// @endlock
@@ -41,6 +47,7 @@ var component = $$('component1');
 	};// @lock
 
 // @region eventManager// @startlock
+	WAF.addListener("button2", "click", button2.click, "WAF");
 	WAF.addListener("button5", "click", button5.click, "WAF");
 	WAF.addListener("button6", "click", button6.click, "WAF");
 	WAF.addListener("document", "onLoad", documentEvent.onLoad, "WAF");
