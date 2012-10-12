@@ -12,7 +12,8 @@ function constructor (id) {
 	var compFileUpload = $$(id+'_fileUpload1');
 	var empRole = $$(id+'_textField10');
 	var comboRole =$$(id+'_combobox1');
-	
+	var firstNameTxt =$$(id+'_textField5');
+	var lastNameTxt = $$(id+'_textField6');
 	
 	this.load = function (data) {// @lock
 
@@ -21,7 +22,14 @@ function constructor (id) {
 	var submit_btn = {};	// @button
 	var image1 = {};	// @image
 	// @endregion// @endlock
-
+	if(firstNameTxt.getValue().length==0){
+			ds.Leaves.query("ID=-1",{onSuccess:function(e){
+				
+				sources.leaves0.setEntitycollection(e.entityCollection);
+				
+				}})
+			
+		}
 	// eventHandlers// @lock
 
 	combobox1.change = function combobox1_change (event)// @startlock
@@ -31,11 +39,6 @@ function constructor (id) {
 
 	submit_btn.click = function submit_btn_click (event)// @startlock
 	{// @endlock
-//		sources.employees.save({
-//		onSuccess:function(){
-//			alert('The employee with the following informations has been correctly saved:/n - first name :'+$$(id+'_textField5').getValue()+'/n - last name :'+$$(id+'_textField6').getValue()+'');
-//			}
-//		});
 		var uploaded = compFileUpload.getFiles();
 		if(uploaded.length!=0){
 			compFileUpload.uploadFiles();

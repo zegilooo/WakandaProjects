@@ -1,6 +1,19 @@
 ﻿
 guidedModel =// @startlock
 {
+	Leaves :
+	{
+		approved :
+		{
+			events :
+			{
+				onInit:function(attributeName)
+				{// @endlock
+					return this.approved = false;
+				}// @startlock
+			}
+		}
+	},
 	Employees :
 	{
 		login :
