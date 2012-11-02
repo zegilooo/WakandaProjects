@@ -14,7 +14,8 @@ function constructor (id) {
 	var comboRole =$$(id+'_combobox1');
 	var firstNameTxt =$$(id+'_textField5');
 	var lastNameTxt = $$(id+'_textField6');
-	
+	var latestLeavesLabel =$$(id+"_richText3");
+	var latestLeavesGrid = $$(id+"_dataGrid1");
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
@@ -22,13 +23,15 @@ function constructor (id) {
 	var submit_btn = {};	// @button
 	var image1 = {};	// @image
 	// @endregion// @endlock
-	if(firstNameTxt.getValue().length==0){
-			ds.Leaves.query("ID=-1",{onSuccess:function(e){
-				
-				sources.leaves0.setEntitycollection(e.entityCollection);
-				
-				}})
-			
+	//if a new employee is added, he do not have leaves
+		if(firstNameTxt.getValue().length==0){
+			latestLeavesLabel.hide();
+			latestLeavesGrid.hide();
+		}
+		else
+		{
+			latestLeavesLabel.show();
+			latestLeavesGrid.show();
 		}
 	// eventHandlers// @lock
 
