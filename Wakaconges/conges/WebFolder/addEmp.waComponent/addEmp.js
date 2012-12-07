@@ -16,51 +16,7 @@ function constructor (id) {
 	var lastNameTxt = $$(id+'_textField6');
 	var latestLeavesLabel =$$(id+"_richText3");
 	var latestLeavesGrid = $$(id+"_dataGrid1");
-	this.load = function (data) {// @lock
-
-	// @region namespaceDeclaration// @startlock
-	var combobox1 = {};	// @combobox
-	var submit_btn = {};	// @button
-	var image1 = {};	// @image
-	// @endregion// @endlock
-	//if a new employee is added, he do not have leaves
-		if(firstNameTxt.getValue().length==0){
-			latestLeavesLabel.hide();
-			latestLeavesGrid.hide();
-		}
-		else
-		{
-			latestLeavesLabel.show();
-			latestLeavesGrid.show();
-		}
-	// eventHandlers// @lock
-
-	combobox1.change = function combobox1_change (event)// @startlock
-	{// @endlock
-		sources.employees.Role=comboRole.getValue();
-		isManager();
-	};// @lock
-
-	submit_btn.click = function submit_btn_click (event)// @startlock
-	{// @endlock
-		var uploaded = compFileUpload.getFiles();
-		if(uploaded.length!=0){
-			compFileUpload.uploadFiles();
-		}
-		sources.employees.serverRefresh();
-		sources.employees.save();
-	};// @lock
-
-	image1.click = function image1_click (event)// @startlock
-	{// @endlock
-		compFileUpload.show();
-	};// @lock
-
-	// @region eventManager// @startlock
-	WAF.addListener(this.id + "_combobox1", "change", combobox1.change, "WAF");
-	WAF.addListener(this.id + "_submit_btn", "click", submit_btn.click, "WAF");
-	WAF.addListener(this.id + "_image1", "click", image1.click, "WAF");
-	// @endregion// @endlock
+	
 	//functions
 	function isManager(){
 		var booleanVal = false;
@@ -101,7 +57,58 @@ function constructor (id) {
 				
 			}
 			sources.employees.isManager= booleanVal;
+	}
+	this.load = function (data) {// @lock
+
+	// @region namespaceDeclaration// @startlock
+	var combobox1 = {};	// @combobox
+	var submit_btn = {};	// @button
+	var image1 = {};	// @image
+	// @endregion// @endlock
+
+	//if a new employee is added, he do not have leaves
+		if(firstNameTxt.getValue().length==0){
+			latestLeavesLabel.hide();
+			latestLeavesGrid.hide();
 		}
+		else
+		{
+			latestLeavesLabel.show();
+			latestLeavesGrid.show();
+		}
+	// eventHandlers// @lock
+
+	combobox1.change = function combobox1_change (event)// @startlock
+	{// @endlock
+		sources.employees.Role=comboRole.getValue();
+		isManager();
+	};// @lock
+
+	submit_btn.click = function submit_btn_click (event)// @startlock
+	{// @endlock
+		var uploaded = compFileUpload.getFiles();
+		if(uploaded.length!=0){
+			compFileUpload.uploadFiles();
+		}
+		  ds.Company.find('ID="'+sessionStorage.currentCompany+'"',{'onSuccess':function(e){
+		  	sources.employees.company.set(e.entity);
+			sources.employees.serverRefresh();
+			sources.employees.save();
+		  	}})
+		
+	};// @lock
+
+	image1.click = function image1_click (event)// @startlock
+	{// @endlock
+		compFileUpload.show();
+	};// @lock
+
+	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_combobox1", "change", combobox1.change, "WAF");
+	WAF.addListener(this.id + "_submit_btn", "click", submit_btn.click, "WAF");
+	WAF.addListener(this.id + "_image1", "click", image1.click, "WAF");
+	// @endregion// @endlock
+
 	};// @lock
 
 

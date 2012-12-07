@@ -11,7 +11,7 @@ function constructor (id) {
 	// @endregion// @endlock
 	var leaveTypesCombo = $$(id+'_combobox1');
 	this.load = function (data) {// @lock
-
+	this.show();
 	// @region namespaceDeclaration// @startlock
 	var combobox1 = {};	// @combobox
 	var button1 = {};	// @button
