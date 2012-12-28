@@ -2,6 +2,7 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 var component = $$('component1');
 var addUsrBtn = $$('button1');
+var selectCompany = $$('button3');
 var compName = $$('richText1');
 var currentUser ;
 var belongsToAdmin;
@@ -68,11 +69,26 @@ var belongsToEmployees;
 			location.href='/index/';
 		}
 		checkRights();
-		sources.company.selectByKey(sessionStorage.currentCompany , {
-			onSuccess: function(){
-				compName.setValue('Company name:'+sources.company.companyName);
-			}
-		});
+		if(!sessionStorage.currentCompany)
+		{
+			  ds.Employees.find('ID = ' + waf.directory.currentUser().ID, {
+				    onSuccess: function(e) {
+				        e.entity.company.load({
+				            onSuccess: function(ee) {
+				               sessionStorage.currentCompany=ee.entity.ID.getValue()
+				           
+				            }
+				        })
+				    }
+				});
+		}
+		else{
+			sources.company.selectByKey(sessionStorage.currentCompany , {
+				onSuccess: function(){
+					compName.setValue('Company name:'+sources.company.companyName);
+				}
+			});
+		}
 		if(belongsToAdmin|belongsToManagers){
 				sources.employees.query('company.ID='+sessionStorage.currentCompany);
 			}
@@ -101,6 +117,7 @@ var belongsToEmployees;
 		checkRights();
 		if(belongsToAdmin){
 			addUsrBtn.show();
+			selectCompany.show();
 		}
 		component.show();
 	}
@@ -114,6 +131,7 @@ var belongsToEmployees;
 		addUsrBtn.hide();
 		component.hide();
 		currentUser=null;
+		sessionStorage.clear();
 	}
 // @region eventManager// @startlock
 	WAF.addListener("button3", "click", button3.click, "WAF");

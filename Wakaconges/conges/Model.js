@@ -29,6 +29,18 @@ guidedModel =// @startlock
 		},
 		methods :
 		{// @endlock
+			checkEmployee:function(login,pwd,companyID)
+			{// @lock
+				var emp = ds.Employees.find('login = ' + login+' and pwd = '+pwd)
+				var company = emp.company.ID;
+				if(company == companyID){
+					return true;
+				}
+				else
+				{
+					 return false;
+				}
+			},// @lock
 			uploadPrg:function(size)
 			{// @lock
 
