@@ -63,9 +63,14 @@ var belongsToEmployees;
 
 	button2.click = function button2_click (event)// @startlock
 	{// @endlock
-		sources.cmp_employees.query('company.ID='+sessionStorage.currentCompany);
+		if(belongsToManagers|belongsToAdmin){
+			sources.cmp_employees.query('company.ID='+sessionStorage.currentCompany);
 		component.loadComponent('/pendingRequests.waComponent');
 		component.show();
+		}
+		else{
+			alert('You are not allowed to perform this action');
+		}
 	};// @lock
 
 	button5.click = function button5_click (event)// @startlock
@@ -145,6 +150,8 @@ var belongsToEmployees;
 				$$('container3').toggleSplitter();
 				$('#container7').css('width','38px');
 				$('#container4').css({'left':'90px','width':'100%'});
+				if(belongsToEmployees)
+					$$('button2').disable();
 			}
 		}
 		component.show();

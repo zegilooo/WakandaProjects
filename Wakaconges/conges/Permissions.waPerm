@@ -1,1 +1,14 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><permissions/>
+﻿<?xml version="1.0" encoding="UTF-8"?><permissions>
+<allow action="create" groupName="Administrators" groupID="BF59DD04C5B54C599F210CEF4267C44E" resource="Model.Employees" temporaryForcePermissions="false" type="dataClass"/>
+<allow action="remove" groupName="Administrators" groupID="BF59DD04C5B54C599F210CEF4267C44E" resource="Model.Employees" temporaryForcePermissions="false" type="dataClass"/>
+<allow action="create" groupName="Administrators" groupID="BF59DD04C5B54C599F210CEF4267C44E" resource="Model.Company" temporaryForcePermissions="false" type="dataClass"/>
+<allow action="update" groupName="Administrators" groupID="BF59DD04C5B54C599F210CEF4267C44E" resource="Model.Company" temporaryForcePermissions="false" type="dataClass"/>
+<allow action="remove" groupName="Administrators" groupID="BF59DD04C5B54C599F210CEF4267C44E" resource="Model.Company" temporaryForcePermissions="false" type="dataClass"/>
+<allow action="remove" groupName="Administrators" groupID="BF59DD04C5B54C599F210CEF4267C44E" resource="Model.Leaves" temporaryForcePermissions="false" type="dataClass"/>
+<allow action="create" groupName="Administrators" groupID="BF59DD04C5B54C599F210CEF4267C44E" resource="Model.LeaveTypesEnum" temporaryForcePermissions="false" type="dataClass"/>
+<allow action="update" groupName="Administrators" groupID="BF59DD04C5B54C599F210CEF4267C44E" resource="Model.LeaveTypesEnum" temporaryForcePermissions="false" type="dataClass"/>
+<allow action="remove" groupName="Administrators" groupID="BF59DD04C5B54C599F210CEF4267C44E" resource="Model.LeaveTypesEnum" temporaryForcePermissions="false" type="dataClass"/>
+<allow action="create" groupName="Administrators" groupID="BF59DD04C5B54C599F210CEF4267C44E" resource="Model.RolesEnum" temporaryForcePermissions="false" type="dataClass"/>
+<allow action="update" groupName="Administrators" groupID="BF59DD04C5B54C599F210CEF4267C44E" resource="Model.RolesEnum" temporaryForcePermissions="false" type="dataClass"/>
+<allow action="remove" groupName="Administrators" groupID="BF59DD04C5B54C599F210CEF4267C44E" resource="Model.RolesEnum" temporaryForcePermissions="false" type="dataClass"/>
+</permissions>

@@ -46,7 +46,6 @@ function constructor (id) {
 
 	};// @lock
 
-
 }// @startlock
 return constructor;
 })();// @endlock
