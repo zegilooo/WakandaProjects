@@ -16,6 +16,26 @@ guidedModel =// @startlock
 	},
 	Employees :
 	{
+		pwd :
+		{
+			events :
+			{
+				onSave:function(attributeName)
+				{// @endlock
+					this.pwd = "toto";
+				}// @startlock
+			}
+		},
+		isManager :
+		{
+			events :
+			{
+				onInit:function(attributeName)
+				{// @endlock
+					this.isManager = false;
+				}// @startlock
+			}
+		},
 		login :
 		{
 			onGet:function()

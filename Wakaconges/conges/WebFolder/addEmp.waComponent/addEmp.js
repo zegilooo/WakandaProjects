@@ -18,15 +18,7 @@ function constructor (id) {
 	var latestLeavesLabel =$$(id+"_richText3");
 	var latestLeavesGrid = $$(id+"_dataGrid1");
 	
-	function belongsToAdministratorsGroup(){
-		if(!waf.directory.currentUserBelongsTo('Administrators')){
-			firstNameTxt.disable();
-			lastNameTxt.disable();
-			birthTxt.disable();
-			comboRole.disable();
-			joinTxt.disable();
-		}
-	}
+	
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock

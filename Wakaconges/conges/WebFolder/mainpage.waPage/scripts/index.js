@@ -31,8 +31,8 @@ var belongsToEmployees;
 
 	button4.click = function button4_click (event)// @startlock
 	{// @endlock
+		sources.employees.query('ID="'+currentUser.ID+'" and company.ID='+sessionStorage.currentCompany);
 		component.loadComponent('/addEmp.waComponent');
-		component.show();
 	};// @lock
 
 	employeesEvent.onCurrentElementChange = function employeesEvent_onCurrentElementChange (event)// @startlock
@@ -43,6 +43,7 @@ var belongsToEmployees;
 					$$(cmp+'_combobox1').setValue(f.entity.ID.getValue());
 					sources.rolesEnum.setCurrentEntity(f.entity);
 				}});
+		checkAdmin();
 	};// @lock
 
 	button3.click = function button3_click (event)// @startlock
@@ -116,7 +117,8 @@ var belongsToEmployees;
 			sources.company.query('ID = '+sessionStorage.currentCompany);
 		}
 		
-		if(belongsToAdmin|belongsToManagers){
+//		if(belongsToManagers | belongsToAdmin){
+		if(belongsToAdmin){
 				sources.employees.query('company.ID='+sessionStorage.currentCompany);
 			}
 		else{
@@ -167,6 +169,20 @@ var belongsToEmployees;
 		component.hide();
 		currentUser=null;
 		sessionStorage.clear();
+	}
+	function checkAdmin(){
+		if(!waf.directory.currentUserBelongsTo('Administrators')){
+			var comboRole =$$(cmp+'_combobox1');
+			var firstNameTxt =$$(cmp+'_textField5');
+			var lastNameTxt = $$(cmp+'_textField6');
+			var birthTxt = $$(cmp+'_textField7');
+			var joinTxt =$$(cmp+'_textField9');
+			firstNameTxt.disable();
+			lastNameTxt.disable();
+			birthTxt.disable();
+			comboRole.disable();
+			joinTxt.disable();
+		}
 	}
 // @region eventManager// @startlock
 	WAF.addListener("company", "onCurrentElementChange", companyEvent.onCurrentElementChange, "WAF");
