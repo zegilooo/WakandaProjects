@@ -36,7 +36,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	documentEvent.onLoad = function documentEvent_onLoad (event)// @startlock
 	{// @endlock
 		if(waf.directory.currentUser()){
-			redirect("/mainpage/");
+			redirect("/companies/");
 		}
 	};// @lock
 

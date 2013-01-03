@@ -18,28 +18,27 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
-
+	approvalCheck.disable();
 	button2.click = function button2_click (event)// @startlock
 	{// @endlock
-		sources.leaves0.approved = false;
-		sources.leaves0.save();
-		
-		approvalCheck.enable();
-		approvalCheck.uncheck();
-		approvalCheck.disable();
+		if(ds.Employees.leaveApproval(waf.directory.currentUser().ID,sources.leaves1.ID,false)){		
+			approvalCheck.enable();
+			approvalCheck.uncheck();
+			approvalCheck.disable();
+			sources.leaves1.serverRefresh();
+		}
 	};// @lock
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
-		sources.leaves0.approved = true;
-		sources.leaves0.save();
-		
-		approvalCheck.enable();
-		approvalCheck.check();
-		approvalCheck.disable();
-
+		if(ds.Employees.leaveApproval(waf.directory.currentUser().ID,sources.leaves1.ID,true)){	
+			approvalCheck.enable();
+			approvalCheck.check();
+			approvalCheck.disable();
+			sources.leaves1.serverRefresh();
+		}
 	};// @lock
-	approvalCheck.disable();
+	
 	// @region eventManager// @startlock
 	WAF.addListener(this.id + "_button2", "click", button2.click, "WAF");
 	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");

@@ -13,15 +13,19 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 	this.show();
 	// @region namespaceDeclaration// @startlock
-	var combobox1 = {};	// @combobox
+	var button2 = {};	// @button
 	var button1 = {};	// @button
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
 
-	combobox1.change = function combobox1_change (event)// @startlock
+	button2.click = function button2_click (event)// @startlock
 	{// @endlock
-		$$(id+'_textField1').setValue(leaveTypesCombo.getValue());
+		sources.leaves0.leaveType=leaveTypesCombo.getValue();
+		sources.leaves0.save({
+			onSuccess: function(){
+				$$(id).loadComponent('/leavesList.waComponent');
+		}});
 	};// @lock
 
 	button1.click = function button1_click (event)// @startlock
@@ -30,7 +34,7 @@ function constructor (id) {
 	};// @lock
 
 	// @region eventManager// @startlock
-	WAF.addListener(this.id + "_combobox1", "change", combobox1.change, "WAF");
+	WAF.addListener(this.id + "_button2", "click", button2.click, "WAF");
 	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");
 	// @endregion// @endlock
 

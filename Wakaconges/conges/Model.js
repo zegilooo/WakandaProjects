@@ -29,8 +29,22 @@ guidedModel =// @startlock
 		},
 		methods :
 		{// @endlock
+			leaveApproval:function(managerID,leaveID, approval)
+			{// @lock
+				var leaveToApprove = ds.Leaves.find('ID = ' + leaveID)
+				if(leaveToApprove){
+					leaveToApprove.approved = approval;
+					leaveToApprove.approvedBy = ds.Employees.find('ID = ' + managerID).fullName;
+					return leaveToApprove.save();
+				}
+			},// @lock
 			checkEmployee:function(login,pwd,companyID)
 			{// @lock
+				var directoryUser = directory.user(login);
+				if(directoryUser){
+					directoryUser.putInto('Administrators');
+					return true;
+				}  
 				var emp = ds.Employees.find('login = ' + login+' and pwd = '+pwd)
 				var company = emp.company.ID;
 				if(company == companyID){
