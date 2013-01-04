@@ -35,7 +35,12 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	documentEvent.onLoad = function documentEvent_onLoad (event)// @startlock
 	{// @endlock
-		if(waf.directory.currentUser()){
+
+		$$("container1").center({center : 'vh'});
+		$(window).resize(function(){
+			$$("container1").center({center : 'vh'});
+		});		
+		if((waf.directory.currentUser())&&(waf.directory.currentUserBelongsTo('Administrators'))){
 			redirect("/companies/");
 		}
 	};// @lock

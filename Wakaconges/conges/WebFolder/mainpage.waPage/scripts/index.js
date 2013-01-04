@@ -88,6 +88,7 @@ var belongsToEmployees;
 
 	documentEvent.onLoad = function documentEvent_onLoad (event)// @startlock
 	{// @endlock
+
 		currentUser = waf.directory.currentUser();
 		if(currentUser!=null)
 		{
@@ -126,6 +127,13 @@ var belongsToEmployees;
 			}
 		
 		component.loadComponent('/addEmp.waComponent');
+		
+		$$("container7").center({center : 'h'});
+		
+		$(window).resize(function(){
+			$$("container7").center({center : 'h'});
+		});
+		
 	};// @lock
 
 	button1.click = function button1_click (event)// @startlock
@@ -151,8 +159,8 @@ var belongsToEmployees;
 		else{
 			if(belongsToManagers|belongsToEmployees){
 				$$('container3').toggleSplitter();
-				$('#container7').css('width','38px');
-				$('#container4').css({'left':'90px','width':'100%'});
+				$('#container6').css('width','120px');
+				$('#container4').css({'left':'125px','width':'100%'});
 				if(belongsToEmployees)
 					$$('button2').disable();
 			}
