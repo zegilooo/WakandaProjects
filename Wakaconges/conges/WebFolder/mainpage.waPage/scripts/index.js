@@ -83,7 +83,7 @@ var belongsToEmployees;
 	button6.click = function button6_click (event)// @startlock
 	{// @endlock
 		component.loadComponent('/leavesList.waComponent');
-		component.show();
+		//component.show();
 	};// @lock
 
 	documentEvent.onLoad = function documentEvent_onLoad (event)// @startlock
@@ -140,7 +140,7 @@ var belongsToEmployees;
 	{// @endlock
 		sources.employees.addNewElement();
 		component.loadComponent('/addEmp.waComponent');
-		component.show();
+		//component.show();
 		$$(cmp+'_image1').clear();
 		$$(cmp+'_dataGrid1').hide();
 		$$(cmp+'_richText3').hide();
@@ -159,13 +159,13 @@ var belongsToEmployees;
 		else{
 			if(belongsToManagers|belongsToEmployees){
 				$$('container3').toggleSplitter();
-				$('#container6').css('width','120px');
-				$('#container4').css({'left':'125px','width':'100%'});
+				$('#container6').css('width','130px');
+				$('#container4').css({'left':'130px','width':'100%'});
 				if(belongsToEmployees)
 					$$('button2').disable();
 			}
 		}
-		component.show();
+		//component.show();
 	}
 	function checkRights(){
 		belongsToAdmin = waf.directory.currentUserBelongsTo('Administrators');
