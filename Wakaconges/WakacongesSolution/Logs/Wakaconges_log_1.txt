@@ -1,0 +1,29 @@
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges] INFO - Opening the solution
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges] INFO - Opening the users and groups directory
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges] INFO - Users and groups directory opened (duration: 40 ms)
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges.conges] INFO - Opening the project
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges.conges] INFO - Opening the database
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges.conges] INFO - Successfully opened journal
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges.conges] INFO - Database opened (duration: 46 ms)
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges.conges] INFO - Project opened (duration: 53 ms)
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Opening the project
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project opened (duration: 3 ms)
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges] INFO - Solution opened (duration: 139 ms)
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges] INFO - Starting the solution
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges.conges] INFO - Starting the project
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges.conges] INFO - Starting the HTTP server
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges.conges] INFO - HTTP server started (duration: 25 ms)
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges.conges] INFO - Project started (duration: 121 ms)
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Starting the project
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Starting the HTTP server
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - HTTP server started (duration: 38 ms)
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project started (duration: 82 ms)
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges.conges] INFO - Executing the bootstrap(s)
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges.conges] INFO - Bootstrap(s) executed (duration: 4 ms)
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Executing the bootstrap(s)
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Bootstrap(s) executed (duration: 9 ms)
+2013-01-04 17:08:13 [com.wakanda-software.Wakaconges] INFO - Solution started (duration: 219 ms)
+2013-01-04 17:08:40 [com.wakanda-software.Wakaconges.conges] INFO - {"data":["logging using the directory login listner"]}, HTTP connection handler
+2013-01-04 17:08:40 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}, HTTP connection handler
+2013-01-04 17:09:31 [com.wakanda-software.Wakaconges.conges] INFO - {"data":["logging using the directory login listner"]}, HTTP connection handler
+2013-01-04 17:09:31 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}, HTTP connection handler

@@ -3,6 +3,53 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#button2 {
+	 z-index: 999;
+	 width: 124px;
+	 height: 66px;
+	 top: 205px;
+	 left: 0px;
+	
+	 color: rgb(25, 25, 25);
+	 
+}
+
+#button6 {
+	 z-index: 999;
+	 width: 124px;
+	 height: 66px;
+	 top: 133px;
+	 left: 0px;
+	
+	 color: rgb(25, 25, 25);
+	 
+}
+
+#button5 {
+	 z-index: 999;
+	 width: 124px;
+	 height: 66px;
+	 top: 60px;
+	 left: 0px;
+	
+	 color: rgb(25, 25, 25);
+	 
+}
+
+#container9 {
+	 top: 0px;
+	 bottom: 0px;
+	 left: 0px;
+	 right: 0px;
+	
+	 position: absolute;
+	 -webkit-box-shadow: rgba(0, 0, 0, 0.199219) 2px 2px 6px 0px, rgba(68, 59, 59, 0.527344) -1px 0px 1px 0px inset;
+	 -moz-box-shadow: rgba(0, 0, 0, 0.199219) 2px 2px 6px 0px, rgba(68, 59, 59, 0.527344) -1px 0px 1px 0px inset;
+	 box-shadow: rgba(0, 0, 0, 0.199219) 2px 2px 6px 0px, rgba(68, 59, 59, 0.527344) -1px 0px 1px 0px inset;
+	 background-color: rgb(229, 229, 229);
+	 
+}
+
 #dataGrid1 .waf-dataGrid-cell.waf-state-active .waf-dataGrid-row.waf-widget-odd {
 	 border-top-width: 0px;
 	 border-left-width: 0px;
@@ -69,7 +116,7 @@
 	 width: 133px;
 	 height: 30px;
 	 top: 4px;
-	 left: 61px;
+	 left: 57px;
 	
 	 color: rgb(25, 25, 25);
 	 font-family: Verdana, Geneva, sans-serif;
@@ -95,11 +142,11 @@
 	 left: 372px;
 	 right: 0px;
 	
+	 background-color: rgb(255, 255, 255);
 	 border-top-width: 0px;
 	 border-left-width: 0px;
 	 border-right-width: 0px;
 	 border-bottom-width: 0px;
-	 background-color: rgb(255, 255, 255);
 	 
 }
 
@@ -185,10 +232,6 @@
 	-moz-border-radius-bottomleft: 0px;
 	 border-bottom-right-radius: 0px;
 	-moz-border-radius-bottomright: 0px;
-	 border-top-width: 0px;
-	 border-left-width: 0px;
-	 border-right-width: 0px;
-	 border-bottom-width: 0px;
 	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIwIiB5Mj0iMTAwJSI+PHN0b3Agc3RvcC1jb2xvcj0iIzNmM2QzZCIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIxIiAvPjxzdG9wIHN0b3AtY29sb3I9IiMxOTE5MTkiIG9mZnNldD0iMTAwJSIgc3RvcC1vcGFjaXR5PSIxIiAvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN3YWYtaWUtZ3JhZGllbnQpIiAvPjwvc3ZnPg==");
 	 background-image:-webkit-gradient(linear,0% 0%, 0% 100%,color-stop(0, rgb(63, 61, 61)),color-stop(1, rgb(25, 25, 25)));
 	 background-image:-webkit-linear-gradient(top, rgb(63, 61, 61) 0%,rgb(25, 25, 25) 100%);
@@ -196,6 +239,10 @@
 	 background-image:-ms-linear-gradient(top, rgb(63, 61, 61) 0%,rgb(25, 25, 25) 100%);
 	 background-image:-o-linear-gradient(top, rgb(63, 61, 61) 0%,rgb(25, 25, 25) 100%);
 	 background-image:linear-gradient(top, rgb(63, 61, 61) 0%,rgb(25, 25, 25) 100%);
+	 border-top-width: 0px;
+	 border-left-width: 0px;
+	 border-right-width: 0px;
+	 border-bottom-width: 0px;
 	 
 }
 
@@ -226,12 +273,14 @@
 }
 
 #button4 {
-	 width: 115px;
+	 z-index: 999;
+	 width: 124px;
 	 height: 66px;
 	 top: 279px;
-	 left: 4px;
+	 left: 0px;
 	
 	 position: absolute;
+	 color: rgb(25, 25, 25);
 	 
 }
 
@@ -361,6 +410,7 @@
 }
 
 #container1 #container2 #button1 {
+	 z-index: 999;
 	 width: 77px;
 	 height: 26px;
 	 top: 439px;
@@ -371,10 +421,11 @@
 }
 
 #container1 #container2 #container3 #container6 #button6 {
-	 width: 115px;
+	 z-index: 999;
+	 width: 124px;
 	 height: 66px;
 	 top: 133px;
-	 left: 4px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
@@ -382,10 +433,10 @@
 
 #container1 #container2 #container3 #container6 #button5 {
 	 z-index: 999;
-	 width: 115px;
+	 width: 124px;
 	 height: 66px;
 	 top: 60px;
-	 left: 4px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
@@ -393,20 +444,21 @@
 
 #container1 #container2 #container3 #container6 #button5 {
 	 z-index: 999;
-	 width: 115px;
+	 width: 124px;
 	 height: 66px;
 	 top: 60px;
-	 left: 4px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
 }
 
 #container1 #container2 #container3 #container6 #button2 {
-	 width: 115px;
+	 z-index: 999;
+	 width: 124px;
 	 height: 66px;
 	 top: 205px;
-	 left: 4px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
@@ -436,7 +488,7 @@
 	 width: 133px;
 	 height: 30px;
 	 top: 4px;
-	 left: 61px;
+	 left: 57px;
 	
 	 position: absolute;
 	 
