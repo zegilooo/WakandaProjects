@@ -146,6 +146,7 @@ var belongsToEmployees;
 		if(belongsToAdmin){
 			addUsrBtn.show();
 			selectCompany.show();
+			$$('button4').hide();
 		}
 		else{
 			if(belongsToManagers|belongsToEmployees){
