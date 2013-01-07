@@ -26,7 +26,10 @@ var belongsToEmployees;
 
 	companyEvent.onCurrentElementChange = function companyEvent_onCurrentElementChange (event)// @startlock
 	{// @endlock
-		compLogo.$domNode.bt('company :'+ this.companyName);
+		//compLogo.$domNode.bt('company :'+ this.companyName);
+		if(belongsToEmployees|belongsToManagers){
+			$('#companyName').css('left','20%');
+		}
 	};// @lock
 
 	button4.click = function button4_click (event)// @startlock
@@ -88,7 +91,6 @@ var belongsToEmployees;
 
 	documentEvent.onLoad = function documentEvent_onLoad (event)// @startlock
 	{// @endlock
-
 		currentUser = waf.directory.currentUser();
 		if(currentUser!=null)
 		{
