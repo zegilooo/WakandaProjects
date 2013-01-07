@@ -1,6 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<directory>
-	<group ID="01000000000000000000000000000000" name="Admin">
-	</group>
-</directory>
+﻿<?xml version="1.0" encoding="UTF-8"?><directory>
 
+<group ID="01000000000000000000000000000000" name="Admin"></group>
+
+<group ID="014D56102C7059458984AB58FAE10DB7" name="Managers">
+
+	<include user="admin" userID="8B3220904B0612479ACF899F63C0670F"/>
+
+</group>
+
+<group ID="7DD3E9B8AEC07648A6AEF082893326B3" name="Administrators">
+
+	<include user="admin" userID="8B3220904B0612479ACF899F63C0670F"/>
+
+</group>
+
+<group ID="FDDF62A98E5F1749BF7B79CD7D20EDD4" name="Employees">
+
+	<include user="admin" userID="8B3220904B0612479ACF899F63C0670F"/>
+
+</group>
+
+<user ID="8B3220904B0612479ACF899F63C0670F" name="admin" fullName="App Admin" thumbnailPath="admin.jpg" password="003b744708c16733d1eb3371bec208fd"/>
+</directory>
