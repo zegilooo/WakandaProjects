@@ -68,7 +68,7 @@ var belongsToEmployees;
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
-		// Add your code here
+		location.href='/companies/';
 	};// @lock
 
 	documentEvent.onLoad = function documentEvent_onLoad (event)// @startlock
