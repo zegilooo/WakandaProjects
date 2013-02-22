@@ -16,15 +16,20 @@ guidedModel =// @startlock
 	},
 	Employees :
 	{
-		pwd :
+		events :
 		{
-			events :
-			{
-				onSave:function(attributeName)
-				{// @endlock
+			onSave:function()
+			{// @endlock
+				if(!this.pwd)
 					this.pwd = "toto";
-				}// @startlock
-			}
+					
+				if(!this.lastLeave){
+						var now = new Date();
+						var joinDate = new Date(this.joiningDate);
+						var diff = (now.getTime() - joinDate.getTime())/ (1000 * 60 * 60 * 24*12);
+						this.offDays = Math.round((diff*3)/2);
+					}
+			}// @startlock
 		},
 		isManager :
 		{

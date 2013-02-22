@@ -36,13 +36,17 @@ function constructor (id) {
 		{
 			latestLeavesLabel.show();
 			latestLeavesGrid.show();
-		}
-	//this following code is a workaround in order to avoid the bug WAK0080044
-	sources.employees.Role.load({
+			//this following code is a workaround in order to avoid the bug WAK0080044
+			sources.employees.Role.load({
 					onSuccess:function(f){
-						var key = f.entity.ID.getValue();
-						sources.rolesEnum.selectByKey(key);
-					}});
+						if(f.entity){
+							var key = f.entity.ID.getValue();
+							sources.rolesEnum.selectByKey(key);
+						}
+					}
+				});
+		}
+	
 	
 	// eventHandlers// @lock
 

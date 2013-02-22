@@ -11,7 +11,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	{// @endlock
 		if(waf.directory.currentUser()){
 				sessionStorage.currentCompany = sources.company.ID;
-				redirect("/mainpage/");
+				redirect("/main/");
 			}
 	};// @lock
 	function redirect(path){
