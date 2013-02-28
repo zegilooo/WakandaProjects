@@ -2,6 +2,7 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
+	var loginField = {};	// @textField
 	var pwdField = {};	// @textField
 	var button1 = {};	// @button
 	var documentEvent = {};	// @document
@@ -12,6 +13,20 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	var companies = $$('combobox1');
 // eventHandlers// @lock
 
+	loginField.keydown = function loginField_keydown (event)// @startlock
+	{// @endlock
+		if (event.which == 13 || event.keyCode == 13) {
+            connect(login.getValue(), pwd.getValue(), companies.getValue());
+        }
+	};// @lock
+
+	pwdField.keydown = function pwdField_keydown (event)// @startlock
+	{// @endlock
+		if (event.which == 13 || event.keyCode == 13) {
+            connect(login.getValue(), pwd.getValue(), companies.getValue());
+        }
+	};// @lock
+
 	pwdField.click = function pwdField_click (event)// @startlock
 	{// @endlock
 		login.clear();
@@ -20,28 +35,15 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
-		if(ds.Employees.checkEmployee(login.getValue(), pwd.getValue(), companies.getValue())){
-			waf.directory.loginByPassword(login.getValue(), pwd.getValue());
-			if(waf.directory.currentUser()){
-				sessionStorage.currentCompany = sources.company.ID;
-				redirect("/main/");
-			}
-		}
-		else
-		{
-			alert('you are not allowed to perform this action');
-		}
+		debugger;
+		connect(login.getValue(), pwd.getValue(), companies.getValue());
 	};// @lock
 
 	documentEvent.onLoad = function documentEvent_onLoad (event)// @startlock
 	{// @endlock
-
-		$$("container1").center({center : 'vh'});
-		$(window).resize(function(){
-			$$("container1").center({center : 'vh'});
-		});		
+		centerInPage('container1');
 		if((waf.directory.currentUser())&&(waf.directory.currentUserBelongsTo('Administrators'))){
-			redirect("/companies/");
+			redirect('/companies/');
 		}
 	};// @lock
 
@@ -53,14 +55,13 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		}
 		else
 		{
-			sessionStorage.clear();
+			clearSession();
 		}
 	};// @lock
-	
-	function redirect(path){
-		location.href =path;
-	}
+
 // @region eventManager// @startlock
+	WAF.addListener("loginField", "keydown", loginField.keydown, "WAF");
+	WAF.addListener("pwdField", "keydown", pwdField.keydown, "WAF");
 	WAF.addListener("pwdField", "click", pwdField.click, "WAF");
 	WAF.addListener("button1", "click", button1.click, "WAF");
 	WAF.addListener("document", "onLoad", documentEvent.onLoad, "WAF");

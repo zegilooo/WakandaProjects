@@ -1,1 +1,11 @@
-{	"journal_file" : 	[		{			"filepath" : "./journal.waJournal",			"sequence_number" : 1,			"datalink" : "C2D12D76DE694D62B3C9B865EDB4B6AD"		}	]}
+
+{
+	"journal_file" : 
+	[
+		{
+			"filepath" : "./journal.waJournal",
+			"sequence_number" : 1,
+			"datalink" : "976A94DE49B0E142AED8690CA5C40D2C"
+		}
+	]
+}
