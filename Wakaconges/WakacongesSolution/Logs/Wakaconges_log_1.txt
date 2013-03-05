@@ -1,0 +1,354 @@
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges] INFO - Opening the solution
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges] INFO - Opening the users and groups directory
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges] INFO - Users and groups directory opened (duration: 37 ms)
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges.conges] INFO - Opening the project
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges.conges] INFO - Opening the database
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges.conges] INFO - Successfully opened journal
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges.conges] INFO - Database opened (duration: 98 ms)
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges.conges] INFO - Project opened (duration: 116 ms)
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Opening the project
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project opened (duration: 7 ms)
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges] INFO - Solution opened (duration: 216 ms)
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges] INFO - Starting the solution
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges.conges] INFO - Starting the project
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges.conges] INFO - Starting the HTTP server
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges.conges] INFO - HTTP server started (duration: 17 ms)
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges.conges] INFO - Project started (duration: 99 ms)
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Starting the project
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Starting the HTTP server
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - HTTP server started (duration: 24 ms)
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project started (duration: 74 ms)
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges.conges] INFO - Executing the bootstrap(s)
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges.conges] INFO - Bootstrap(s) executed (duration: 7 ms)
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Executing the bootstrap(s)
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Bootstrap(s) executed (duration: 12 ms)
+2013-03-01 09:06:57 [com.wakanda-software.Wakaconges] INFO - Solution started (duration: 194 ms)
+2013-03-01 09:52:52 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-01 09:52:52 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-01 09:55:27 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-01 09:55:27 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-01 12:23:55 [com.wakanda-software.Wakaconges] INFO - Stopping the solution
+2013-03-01 12:23:55 [com.wakanda-software.Wakaconges.conges] INFO - Stopping the project
+2013-03-01 12:23:57 [com.wakanda-software.Wakaconges.conges] INFO - Project stopped (duration: 2088 ms)
+2013-03-01 12:23:57 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Stopping the project
+2013-03-01 12:23:59 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project stopped (duration: 2090 ms)
+2013-03-01 12:23:59 [com.wakanda-software.Wakaconges] INFO - Solution stopped (duration: 4178 ms)
+2013-03-01 12:23:59 [com.wakanda-software.Wakaconges] INFO - Closing the solution
+2013-03-01 12:23:59 [com.wakanda-software.Wakaconges.conges] INFO - Closing the project
+2013-03-01 12:23:59 [com.wakanda-software.Wakaconges.conges] INFO - Closing the database
+2013-03-01 12:23:59 [com.wakanda-software.Wakaconges.conges] INFO - Database closed (duration: 341 ms)
+2013-03-01 12:23:59 [com.wakanda-software.Wakaconges.conges] INFO - Project closed (duration: 346 ms)
+2013-03-01 12:23:59 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Closing the project
+2013-03-01 12:23:59 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project closed (duration: 5 ms)
+2013-03-04 08:56:14 [com.wakanda-software.Wakaconges] INFO - Opening the solution
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges] INFO - Opening the users and groups directory
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges] INFO - Users and groups directory opened (duration: 80 ms)
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges.conges] INFO - Opening the project
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges.conges] INFO - Opening the database
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges.conges] INFO - Successfully opened journal
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges.conges] INFO - Database opened (duration: 92 ms)
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges.conges] INFO - Project opened (duration: 141 ms)
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Opening the project
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project opened (duration: 23 ms)
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges] INFO - Solution opened (duration: 362 ms)
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges] INFO - Starting the solution
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges.conges] INFO - Starting the project
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges.conges] INFO - Starting the HTTP server
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges.conges] INFO - HTTP server started (duration: 25 ms)
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges.conges] INFO - Project started (duration: 116 ms)
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Starting the project
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Starting the HTTP server
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - HTTP server started (duration: 20 ms)
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project started (duration: 93 ms)
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges.conges] INFO - Executing the bootstrap(s)
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges.conges] INFO - Bootstrap(s) executed (duration: 4 ms)
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Executing the bootstrap(s)
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Bootstrap(s) executed (duration: 14 ms)
+2013-03-04 08:56:15 [com.wakanda-software.Wakaconges] INFO - Solution started (duration: 230 ms)
+2013-03-04 10:23:11 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 10:23:11 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 10:39:29 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 10:39:29 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 14:53:48 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 14:53:48 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 14:57:41 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 14:57:41 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 14:57:43 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 14:57:43 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 14:57:45 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 14:57:45 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 14:57:47 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 14:57:47 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 14:57:48 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 14:57:48 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 14:57:49 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 14:57:49 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 14:57:49 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 14:57:49 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 14:57:49 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 14:57:49 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 14:57:49 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 14:57:49 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 14:58:25 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 14:58:25 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 14:59:02 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 14:59:02 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 15:49:37 [com.wakanda-software.Wakaconges] INFO - Stopping the solution
+2013-03-04 15:49:37 [com.wakanda-software.Wakaconges.conges] INFO - Stopping the project
+2013-03-04 15:49:39 [com.wakanda-software.Wakaconges.conges] INFO - Project stopped (duration: 2061 ms)
+2013-03-04 15:49:39 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Stopping the project
+2013-03-04 15:49:41 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project stopped (duration: 2100 ms)
+2013-03-04 15:49:41 [com.wakanda-software.Wakaconges] INFO - Solution stopped (duration: 4161 ms)
+2013-03-04 15:49:41 [com.wakanda-software.Wakaconges] INFO - Closing the solution
+2013-03-04 15:49:41 [com.wakanda-software.Wakaconges.conges] INFO - Closing the project
+2013-03-04 15:49:41 [com.wakanda-software.Wakaconges.conges] INFO - Closing the database
+2013-03-04 15:49:42 [com.wakanda-software.Wakaconges.conges] INFO - Database closed (duration: 481 ms)
+2013-03-04 15:49:42 [com.wakanda-software.Wakaconges.conges] INFO - Project closed (duration: 481 ms)
+2013-03-04 15:49:42 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Closing the project
+2013-03-04 15:49:42 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project closed (duration: 0 ms)
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges] INFO - Opening the solution
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges] INFO - Opening the users and groups directory
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges] INFO - Users and groups directory opened (duration: 76 ms)
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges.conges] INFO - Opening the project
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges.conges] INFO - Opening the database
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges.conges] INFO - Successfully opened journal
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges.conges] INFO - Database opened (duration: 168 ms)
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges.conges] INFO - Project opened (duration: 192 ms)
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Opening the project
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project opened (duration: 3 ms)
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges] INFO - Solution opened (duration: 310 ms)
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges] INFO - Starting the solution
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges.conges] INFO - Starting the project
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges.conges] INFO - Starting the HTTP server
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges.conges] INFO - HTTP server started (duration: 16 ms)
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges.conges] INFO - Project started (duration: 39 ms)
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Starting the project
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Starting the HTTP server
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - HTTP server started (duration: 23 ms)
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project started (duration: 52 ms)
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges.conges] INFO - Executing the bootstrap(s)
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges.conges] INFO - Bootstrap(s) executed (duration: 4 ms)
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Executing the bootstrap(s)
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Bootstrap(s) executed (duration: 7 ms)
+2013-03-04 16:02:12 [com.wakanda-software.Wakaconges] INFO - Solution started (duration: 106 ms)
+2013-03-04 16:02:45 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 16:02:45 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 16:32:57 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 16:32:57 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 16:33:58 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 16:33:58 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 16:53:06 [com.wakanda-software.Wakaconges] INFO - Stopping the solution
+2013-03-04 16:53:06 [com.wakanda-software.Wakaconges.conges] INFO - Stopping the project
+2013-03-04 16:53:08 [com.wakanda-software.Wakaconges.conges] INFO - Project stopped (duration: 2042 ms)
+2013-03-04 16:53:08 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Stopping the project
+2013-03-04 16:53:10 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project stopped (duration: 2043 ms)
+2013-03-04 16:53:10 [com.wakanda-software.Wakaconges] INFO - Solution stopped (duration: 4085 ms)
+2013-03-04 16:53:10 [com.wakanda-software.Wakaconges] INFO - Closing the solution
+2013-03-04 16:53:10 [com.wakanda-software.Wakaconges.conges] INFO - Closing the project
+2013-03-04 16:53:10 [com.wakanda-software.Wakaconges.conges] INFO - Closing the database
+2013-03-04 16:53:10 [com.wakanda-software.Wakaconges.conges] INFO - Database closed (duration: 420 ms)
+2013-03-04 16:53:10 [com.wakanda-software.Wakaconges.conges] INFO - Project closed (duration: 425 ms)
+2013-03-04 16:53:10 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Closing the project
+2013-03-04 16:53:10 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project closed (duration: 14 ms)
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges] INFO - Opening the solution
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges] INFO - Opening the users and groups directory
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges] INFO - Users and groups directory opened (duration: 21 ms)
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges.conges] INFO - Opening the project
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges.conges] INFO - Opening the database
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges.conges] INFO - Successfully opened journal
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges.conges] INFO - Database opened (duration: 16 ms)
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges.conges] INFO - Project opened (duration: 25 ms)
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Opening the project
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project opened (duration: 3 ms)
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges] INFO - Solution opened (duration: 79 ms)
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges] INFO - Starting the solution
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges.conges] INFO - Starting the project
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges.conges] INFO - Starting the HTTP server
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges.conges] INFO - HTTP server started (duration: 18 ms)
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges.conges] INFO - Project started (duration: 44 ms)
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Starting the project
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Starting the HTTP server
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - HTTP server started (duration: 24 ms)
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project started (duration: 56 ms)
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges.conges] INFO - Executing the bootstrap(s)
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges.conges] INFO - Bootstrap(s) executed (duration: 5 ms)
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Executing the bootstrap(s)
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Bootstrap(s) executed (duration: 8 ms)
+2013-03-04 16:54:23 [com.wakanda-software.Wakaconges] INFO - Solution started (duration: 116 ms)
+2013-03-04 16:56:00 [com.wakanda-software.Wakaconges] INFO - Stopping the solution
+2013-03-04 16:56:00 [com.wakanda-software.Wakaconges.conges] INFO - Stopping the project
+2013-03-04 16:56:02 [com.wakanda-software.Wakaconges.conges] INFO - Project stopped (duration: 2045 ms)
+2013-03-04 16:56:02 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Stopping the project
+2013-03-04 16:56:04 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project stopped (duration: 2041 ms)
+2013-03-04 16:56:04 [com.wakanda-software.Wakaconges] INFO - Solution stopped (duration: 4087 ms)
+2013-03-04 16:56:04 [com.wakanda-software.Wakaconges] INFO - Closing the solution
+2013-03-04 16:56:04 [com.wakanda-software.Wakaconges.conges] INFO - Closing the project
+2013-03-04 16:56:04 [com.wakanda-software.Wakaconges.conges] INFO - Closing the database
+2013-03-04 16:56:05 [com.wakanda-software.Wakaconges.conges] INFO - Database closed (duration: 419 ms)
+2013-03-04 16:56:05 [com.wakanda-software.Wakaconges.conges] INFO - Project closed (duration: 419 ms)
+2013-03-04 16:56:05 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Closing the project
+2013-03-04 16:56:05 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project closed (duration: 11 ms)
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges] INFO - Opening the solution
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges] INFO - Opening the users and groups directory
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges] INFO - Users and groups directory opened (duration: 20 ms)
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges.conges] INFO - Opening the project
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges.conges] INFO - Opening the database
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges.conges] INFO - Successfully opened journal
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges.conges] INFO - Database opened (duration: 13 ms)
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges.conges] INFO - Project opened (duration: 21 ms)
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Opening the project
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project opened (duration: 3 ms)
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges] INFO - Solution opened (duration: 70 ms)
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges] INFO - Starting the solution
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges.conges] INFO - Starting the project
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges.conges] INFO - Starting the HTTP server
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges.conges] INFO - HTTP server started (duration: 18 ms)
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges.conges] INFO - Project started (duration: 43 ms)
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Starting the project
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Starting the HTTP server
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - HTTP server started (duration: 22 ms)
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project started (duration: 48 ms)
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges.conges] INFO - Executing the bootstrap(s)
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges.conges] INFO - Bootstrap(s) executed (duration: 4 ms)
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Executing the bootstrap(s)
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Bootstrap(s) executed (duration: 8 ms)
+2013-03-04 16:56:57 [com.wakanda-software.Wakaconges] INFO - Solution started (duration: 105 ms)
+2013-03-04 17:02:22 [com.wakanda-software.Wakaconges.conges] INFO - Closing the database
+2013-03-04 17:02:23 [com.wakanda-software.Wakaconges.conges] INFO - Database closed (duration: 436 ms)
+2013-03-04 17:02:23 [com.wakanda-software.Wakaconges.conges] INFO - Opening the database
+2013-03-04 17:02:23 [com.wakanda-software.Wakaconges.conges] INFO - Successfully opened journal
+2013-03-04 17:02:23 [com.wakanda-software.Wakaconges.conges] INFO - Database opened (duration: 29 ms)
+2013-03-04 17:07:23 [com.wakanda-software.Wakaconges.conges] INFO - Closing the database
+2013-03-04 17:07:23 [com.wakanda-software.Wakaconges.conges] INFO - Database closed (duration: 433 ms)
+2013-03-04 17:07:23 [com.wakanda-software.Wakaconges.conges] INFO - Opening the database
+2013-03-04 17:07:23 [com.wakanda-software.Wakaconges.conges] INFO - Successfully opened journal
+2013-03-04 17:07:23 [com.wakanda-software.Wakaconges.conges] INFO - Database opened (duration: 27 ms)
+2013-03-04 17:10:43 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 17:10:43 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 17:10:59 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 17:10:59 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 17:17:14 [com.wakanda-software.Wakaconges.conges] INFO - Closing the database
+2013-03-04 17:17:14 [com.wakanda-software.Wakaconges.conges] INFO - Database closed (duration: 438 ms)
+2013-03-04 17:17:14 [com.wakanda-software.Wakaconges.conges] INFO - Opening the database
+2013-03-04 17:17:14 [com.wakanda-software.Wakaconges.conges] INFO - Successfully opened journal
+2013-03-04 17:17:14 [com.wakanda-software.Wakaconges.conges] INFO - Database opened (duration: 35 ms)
+2013-03-04 17:17:52 [com.wakanda-software.Wakaconges] INFO - Stopping the solution
+2013-03-04 17:17:52 [com.wakanda-software.Wakaconges.conges] INFO - Stopping the project
+2013-03-04 17:17:54 [com.wakanda-software.Wakaconges.conges] INFO - Project stopped (duration: 2067 ms)
+2013-03-04 17:17:54 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Stopping the project
+2013-03-04 17:17:56 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project stopped (duration: 2044 ms)
+2013-03-04 17:17:56 [com.wakanda-software.Wakaconges] INFO - Solution stopped (duration: 4112 ms)
+2013-03-04 17:17:56 [com.wakanda-software.Wakaconges] INFO - Closing the solution
+2013-03-04 17:17:56 [com.wakanda-software.Wakaconges.conges] INFO - Closing the project
+2013-03-04 17:17:56 [com.wakanda-software.Wakaconges.conges] INFO - Closing the database
+2013-03-04 17:17:57 [com.wakanda-software.Wakaconges.conges] INFO - Database closed (duration: 419 ms)
+2013-03-04 17:17:57 [com.wakanda-software.Wakaconges.conges] INFO - Project closed (duration: 423 ms)
+2013-03-04 17:17:57 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Closing the project
+2013-03-04 17:17:57 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project closed (duration: 8 ms)
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges] INFO - Opening the solution
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges] INFO - Opening the users and groups directory
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges] INFO - Users and groups directory opened (duration: 20 ms)
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges.conges] INFO - Opening the project
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges.conges] INFO - Opening the database
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges.conges] INFO - Successfully opened journal
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges.conges] INFO - Database opened (duration: 14 ms)
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges.conges] INFO - Project opened (duration: 22 ms)
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Opening the project
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project opened (duration: 4 ms)
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges] INFO - Solution opened (duration: 76 ms)
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges] INFO - Starting the solution
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges.conges] INFO - Starting the project
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges.conges] INFO - Starting the HTTP server
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges.conges] INFO - HTTP server started (duration: 18 ms)
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges.conges] INFO - Project started (duration: 44 ms)
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Starting the project
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Starting the HTTP server
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - HTTP server started (duration: 20 ms)
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project started (duration: 49 ms)
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges.conges] INFO - Executing the bootstrap(s)
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges.conges] INFO - Bootstrap(s) executed (duration: 4 ms)
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Executing the bootstrap(s)
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Bootstrap(s) executed (duration: 8 ms)
+2013-03-04 17:18:11 [com.wakanda-software.Wakaconges] INFO - Solution started (duration: 107 ms)
+2013-03-04 17:18:29 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 17:18:29 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 17:18:33 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 17:18:33 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 17:35:50 [com.wakanda-software.Wakaconges.conges] INFO - Closing the database
+2013-03-04 17:35:50 [com.wakanda-software.Wakaconges.conges] INFO - Database closed (duration: 437 ms)
+2013-03-04 17:35:50 [com.wakanda-software.Wakaconges.conges] INFO - Opening the database
+2013-03-04 17:35:50 [com.wakanda-software.Wakaconges.conges] INFO - Successfully opened journal
+2013-03-04 17:35:50 [com.wakanda-software.Wakaconges.conges] INFO - Database opened (duration: 29 ms)
+2013-03-04 18:34:42 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 18:34:42 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 18:34:55 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 18:34:55 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 18:38:45 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-04 18:38:45 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}
+2013-03-04 18:44:49 [com.wakanda-software.Wakaconges] INFO - Stopping the solution
+2013-03-04 18:44:49 [com.wakanda-software.Wakaconges.conges] INFO - Stopping the project
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges] INFO - Opening the solution
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges] INFO - Opening the users and groups directory
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges] INFO - Users and groups directory opened (duration: 74 ms)
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges.conges] INFO - Opening the project
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges.conges] INFO - Opening the database
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges.conges] INFO - Successfully opened journal
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges.conges] INFO - Database opened (duration: 99 ms)
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges.conges] INFO - Project opened (duration: 125 ms)
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Opening the project
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project opened (duration: 6 ms)
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges] INFO - Solution opened (duration: 236 ms)
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges] INFO - Starting the solution
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges.conges] INFO - Starting the project
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges.conges] INFO - Starting the HTTP server
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges.conges] INFO - HTTP server started (duration: 18 ms)
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges.conges] INFO - Project started (duration: 49 ms)
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Starting the project
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Starting the HTTP server
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - HTTP server started (duration: 20 ms)
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project started (duration: 60 ms)
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges.conges] INFO - Executing the bootstrap(s)
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges.conges] INFO - Bootstrap(s) executed (duration: 4 ms)
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Executing the bootstrap(s)
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Bootstrap(s) executed (duration: 10 ms)
+2013-03-05 09:24:01 [com.wakanda-software.Wakaconges] INFO - Solution started (duration: 125 ms)
+2013-03-05 09:24:10 [com.wakanda-software.Wakaconges] INFO - Stopping the solution
+2013-03-05 09:24:10 [com.wakanda-software.Wakaconges.conges] INFO - Stopping the project
+2013-03-05 09:24:12 [com.wakanda-software.Wakaconges.conges] INFO - Project stopped (duration: 2041 ms)
+2013-03-05 09:24:12 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Stopping the project
+2013-03-05 09:24:14 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project stopped (duration: 2043 ms)
+2013-03-05 09:24:14 [com.wakanda-software.Wakaconges] INFO - Solution stopped (duration: 4085 ms)
+2013-03-05 09:24:14 [com.wakanda-software.Wakaconges] INFO - Closing the solution
+2013-03-05 09:24:14 [com.wakanda-software.Wakaconges.conges] INFO - Closing the project
+2013-03-05 09:24:14 [com.wakanda-software.Wakaconges.conges] INFO - Closing the database
+2013-03-05 09:24:15 [com.wakanda-software.Wakaconges.conges] INFO - Database closed (duration: 420 ms)
+2013-03-05 09:24:15 [com.wakanda-software.Wakaconges.conges] INFO - Project closed (duration: 420 ms)
+2013-03-05 09:24:15 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Closing the project
+2013-03-05 09:24:15 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project closed (duration: 20 ms)
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges] INFO - Opening the solution
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges] INFO - Opening the users and groups directory
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges] INFO - Users and groups directory opened (duration: 19 ms)
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges.conges] INFO - Opening the project
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges.conges] INFO - Opening the database
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges.conges] INFO - Successfully opened journal
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges.conges] INFO - Database opened (duration: 14 ms)
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges.conges] INFO - Project opened (duration: 24 ms)
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Opening the project
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project opened (duration: 3 ms)
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges] INFO - Solution opened (duration: 79 ms)
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges] INFO - Starting the solution
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges.conges] INFO - Starting the project
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges.conges] INFO - Starting the HTTP server
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges.conges] INFO - HTTP server started (duration: 17 ms)
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges.conges] INFO - Project started (duration: 46 ms)
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Starting the project
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Starting the HTTP server
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - HTTP server started (duration: 21 ms)
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Project started (duration: 49 ms)
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges.conges] INFO - Executing the bootstrap(s)
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges.conges] INFO - Bootstrap(s) executed (duration: 4 ms)
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Executing the bootstrap(s)
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges.ServerAdmin] INFO - Bootstrap(s) executed (duration: 8 ms)
+2013-03-05 09:28:17 [com.wakanda-software.Wakaconges] INFO - Solution started (duration: 109 ms)
+2013-03-05 09:31:24 [com.wakanda-software.Wakaconges.conges] INFO - logging using the directory login listner
+2013-03-05 09:31:24 [com.wakanda-software.Wakaconges.conges.console] INFO - {"data":["logging using the directory login listner"]}

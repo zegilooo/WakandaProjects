@@ -16,15 +16,13 @@ guidedModel =// @startlock
 	},
 	Employees :
 	{
-		pwd :
+		events :
 		{
-			events :
-			{
-				onSave:function(attributeName)
-				{// @endlock
-					this.pwd = "toto";
-				}// @startlock
-			}
+			onSave:function()
+			{// @endlock
+				if(!this.pwd)
+					this.pwd='toto';
+			}// @startlock
 		},
 		isManager :
 		{
@@ -66,14 +64,18 @@ guidedModel =// @startlock
 					return true;
 				}  
 				var emp = ds.Employees.find('login = ' + login+' and pwd = '+pwd)
-				var company = emp.company.ID;
-				if(company == companyID){
-					return true;
+				if(emp){
+					var company = emp.company.ID;
+					if(company == companyID){
+						return true;
+					}
+					else
+					{
+						 return false;
+					}
 				}
 				else
-				{
-					 return false;
-				}
+				return false;
 			}// @startlock
 		},
 		fullName :

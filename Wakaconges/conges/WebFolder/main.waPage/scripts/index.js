@@ -25,8 +25,12 @@ var belongsToEmployees;
 
 	button6.click = function button6_click (event)// @startlock
 	{// @endlock
-		sources.employees.addNewElement();
-		component.loadComponent('/addEmp.waComponent');
+		component.loadComponent({
+			path: '/addEmp.waComponent',
+			onSuccess: function(ss){
+					
+				}
+		});
 		$$(cmp+'_image1').clear();
 		$$(cmp+'_dataGrid1').hide();
 		$$(cmp+'_richText3').hide();
@@ -35,7 +39,7 @@ var belongsToEmployees;
 	login1.logout = function login1_logout (event)// @startlock
 	{// @endlock
 		doAtLogOut();
-		location.href='/index/';
+		goHome();
 	};// @lock
 
 	employeesEvent.onCurrentElementChange = function employeesEvent_onCurrentElementChange (event)// @startlock
@@ -54,7 +58,6 @@ var belongsToEmployees;
 		if(belongsToManagers|belongsToAdmin){
 			sources.employees.query('company.ID='+sessionStorage.currentCompany);
 		component.loadComponent('/pendingRequests.waComponent');
-		component.show();
 		}
 		else{
 			alert('You are not allowed to perform this action');
@@ -68,7 +71,7 @@ var belongsToEmployees;
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
-		location.href='/companies/';
+		redirect('/companies/');
 	};// @lock
 
 	documentEvent.onLoad = function documentEvent_onLoad (event)// @startlock
@@ -82,17 +85,16 @@ var belongsToEmployees;
 		else
 		{
 			alert("please log in");
-			location.href='/index/';
+			goHome();
 		}
 		checkRights();
-		if(!sessionStorage.currentCompany)
+		if(!sessionStorage.currentCompany && !belongsToAdmin)
 		{
 			  ds.Employees.find('ID = ' + waf.directory.currentUser().ID, {
 				    onSuccess: function(e) {
 				        e.entity.company.load({
 				            onSuccess: function(ee) {
-				               sessionStorage.currentCompany=ee.entity.ID.getValue()
-				           
+				               sessionStorage.currentCompany=ee.entity.ID.getValue();
 				            }
 				        })
 				    }
@@ -110,8 +112,7 @@ var belongsToEmployees;
 			}
 		
 		component.loadComponent('/addEmp.waComponent');
-		$('#container11').css('left','45%')
-		
+		$('#container11').css('left','45%');
 	};// @lock
 
 	button2.click = function button2_click (event)// @startlock
@@ -138,7 +139,6 @@ var belongsToEmployees;
 					$$('button4').disable();
 			}
 		}
-		//component.show();
 	}
 	function checkRights(){
 		belongsToAdmin = waf.directory.currentUserBelongsTo('Administrators');
@@ -150,7 +150,7 @@ var belongsToEmployees;
 		addUsrBtn.hide();
 		component.hide();
 		currentUser=null;
-		sessionStorage.clear();
+		cleanSession();
 	}
 	function checkAdmin(){
 		if(!waf.directory.currentUserBelongsTo('Administrators')){
@@ -159,11 +159,14 @@ var belongsToEmployees;
 			var lastNameTxt = $$(cmp+'_textField6');
 			var birthTxt = $$(cmp+'_textField7');
 			var joinTxt =$$(cmp+'_textField9');
-//			firstNameTxt.disable();
-//			lastNameTxt.disable();
-//			birthTxt.disable();
-//			comboRole.disable();
-//			joinTxt.disable();
+			firstNameTxt.disable();
+			lastNameTxt.disable();
+			birthTxt.disable();
+			comboRole.disable();
+			joinTxt.disable();
+		}else
+		{
+			userImg.clear();
 		}
 	}
 // @region eventManager// @startlock

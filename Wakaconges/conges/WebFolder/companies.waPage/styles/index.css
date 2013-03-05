@@ -4,10 +4,10 @@
 */
 
 #login1 {
-	 width: 1066px;
 	 height: 82px;
 	 top: 0px;
 	 left: 0px;
+	 right: 0px;
 	
 	 position: absolute;
 	 
@@ -127,8 +127,8 @@
 #container5 {
 	 width: 672px;
 	 height: 358px;
-	 top: 51px;
-	 left: 19px;
+	 top: 53px;
+	 left: 25px;
 	
 	 position: absolute;
 	 
@@ -137,8 +137,8 @@
 #container4 {
 	 width: 713px;
 	 height: 422px;
-	 top: 506px;
-	 left: 117px;
+	 top: 151px;
+	 left: 336px;
 	
 	 position: absolute;
 	 background-color: transparent;

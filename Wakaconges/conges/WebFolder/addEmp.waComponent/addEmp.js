@@ -26,6 +26,7 @@ function constructor (id) {
 	var submit_btn = {};	// @button
 	var image1 = {};	// @image
 	// @endregion// @endlock
+
 	//debugger;
 	//if a new employee is added, he do not have leaves
 		if(sources.employees.isNewElement()){
@@ -38,16 +39,18 @@ function constructor (id) {
 			latestLeavesGrid.show();
 		}
 	//this following code is a workaround in order to avoid the bug WAK0080044
-	sources.employees.Role.load({
-					onSuccess:function(f){
-						var key = f.entity.ID.getValue();
-						sources.rolesEnum.selectByKey(key);
-					}});
-	
+//	if(sources.employees.ID){
+//		sources.employees.Role.load({
+//					onSuccess:function(f){
+//						var key = f.entity.ID.getValue();
+//						sources.rolesEnum.selectByKey(key);
+//					}});
+//	}
 	// eventHandlers// @lock
 
 	employeesEvent.onCurrentElementChange = function employeesEvent_onCurrentElementChange (event)// @startlock
 	{// @endlock
+		debugger;
 		if(!sources.employees.isNewElement()){
 			sources.employees.Role.load({
 					onSuccess:function(f){

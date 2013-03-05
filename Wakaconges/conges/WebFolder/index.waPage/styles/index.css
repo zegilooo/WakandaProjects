@@ -3,6 +3,16 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#button2 {
+	 width: 32px;
+	 height: 32px;
+	 top: 300px;
+	 left: 292px;
+	
+	 position: absolute;
+	 
+}
+
 #richText1 {
 	 width: 353px;
 	 height: 91px;

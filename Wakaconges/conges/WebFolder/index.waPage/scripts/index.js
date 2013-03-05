@@ -2,6 +2,7 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
+	var button2 = {};	// @button
 	var loginField = {};	// @textField
 	var pwdField = {};	// @textField
 	var button1 = {};	// @button
@@ -12,6 +13,12 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	var pwd = $$('pwdField');
 	var companies = $$('combobox1');
 // eventHandlers// @lock
+
+	button2.click = function button2_click (event)// @startlock
+	{// @endlock
+		sessionStorage.adminAction='add';
+		connect(login.getValue(), pwd.getValue(), companies.getValue());
+	};// @lock
 
 	loginField.keydown = function loginField_keydown (event)// @startlock
 	{// @endlock
@@ -35,7 +42,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
-		debugger;
 		connect(login.getValue(), pwd.getValue(), companies.getValue());
 	};// @lock
 
@@ -47,6 +53,12 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		}
 	};// @lock
 
+	companyEvent.onCollectionChange = function companyEvent_onCollectionChange (event)// @startlock
+	{// @endlock
+		if(sources.company.length != 0)
+			$$('button2').hide();
+	};// @lock
+
 	companyEvent.onCurrentElementChange = function companyEvent_onCurrentElementChange (event)// @startlock
 	{// @endlock
 		if(waf.directory.currentUser()){
@@ -55,11 +67,13 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		}
 		else
 		{
-			clearSession();
+			cleanSession();
 		}
 	};// @lock
 
 // @region eventManager// @startlock
+	WAF.addListener("company", "onCollectionChange", companyEvent.onCollectionChange, "WAF");
+	WAF.addListener("button2", "click", button2.click, "WAF");
 	WAF.addListener("loginField", "keydown", loginField.keydown, "WAF");
 	WAF.addListener("pwdField", "keydown", pwdField.keydown, "WAF");
 	WAF.addListener("pwdField", "click", pwdField.click, "WAF");
