@@ -10,5 +10,9 @@ Desktop.ini
 .DS_Store
 
 #Wakanda files
-.waData
-.waInde
+*.waData
+*.waIndx
+*.waPreferences
+*.txt
+*.waJournal
+*.waLog
