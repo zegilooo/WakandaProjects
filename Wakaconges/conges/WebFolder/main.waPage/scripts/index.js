@@ -25,12 +25,9 @@ var belongsToEmployees;
 
 	button6.click = function button6_click (event)// @startlock
 	{// @endlock
-		component.loadComponent({
-			path: '/addEmp.waComponent',
-			onSuccess: function(ss){
-					
-				}
-		});
+		//buggy code block --> WAK0080860: Cannot add new element in datasource and load web component simultaneously
+		loadComponent(cmp,'/addEmp.waComponent');
+		sources.employees.addNewElement();
 		$$(cmp+'_image1').clear();
 		$$(cmp+'_dataGrid1').hide();
 		$$(cmp+'_richText3').hide();
@@ -44,20 +41,21 @@ var belongsToEmployees;
 
 	employeesEvent.onCurrentElementChange = function employeesEvent_onCurrentElementChange (event)// @startlock
 	{// @endlock
-		checkAdmin();
+		if($$(cmp).isVisible())
+			checkAdmin();
 	};// @lock
 
 	button5.click = function button5_click (event)// @startlock
 	{// @endlock
 		sources.employees.query('ID="'+currentUser.ID+'" and company.ID='+sessionStorage.currentCompany);
-		component.loadComponent('/addEmp.waComponent');
+		loadComponent(cmp,'/addEmp.waComponent');
 	};// @lock
 
 	button4.click = function button4_click (event)// @startlock
 	{// @endlock
 		if(belongsToManagers|belongsToAdmin){
 			sources.employees.query('company.ID='+sessionStorage.currentCompany);
-		component.loadComponent('/pendingRequests.waComponent');
+			loadComponent(cmp,'/pendingRequests.waComponent');
 		}
 		else{
 			alert('You are not allowed to perform this action');
@@ -66,7 +64,7 @@ var belongsToEmployees;
 
 	button3.click = function button3_click (event)// @startlock
 	{// @endlock
-		component.loadComponent('/leavesList.waComponent');
+		loadComponent(cmp,'/leavesList.waComponent');
 	};// @lock
 
 	button1.click = function button1_click (event)// @startlock
@@ -77,6 +75,7 @@ var belongsToEmployees;
 	documentEvent.onLoad = function documentEvent_onLoad (event)// @startlock
 	{// @endlock
 		currentUser = waf.directory.currentUser();
+		sources.currentuser.query('ID='+currentUser.ID);
 		if(currentUser!=null)
 		{
 			cmp="component1";
@@ -111,19 +110,19 @@ var belongsToEmployees;
 				sources.employees.query('ID="'+currentUser.ID+'" and company.ID='+sessionStorage.currentCompany);
 			}
 		
-		component.loadComponent('/addEmp.waComponent');
+		loadComponent(cmp,'/addEmp.waComponent');
 		$('#container11').css('left','45%');
 	};// @lock
 
 	button2.click = function button2_click (event)// @startlock
 	{// @endlock
-		component.loadComponent('/leaveRequest.waComponent');
+		loadComponent(cmp,'/leaveRequest.waComponent');
 	};// @lock
 	
 	//useful functions
 	function doAtLogIn(){
 		sources.cmp.sync();
-		currentUser = waf.directory.currentUser();
+		
 		checkRights();
 		if(belongsToAdmin){
 			addUsrBtn.show();
@@ -131,12 +130,13 @@ var belongsToEmployees;
 			$$('button4').hide();
 		}
 		else{
-			if(belongsToManagers|belongsToEmployees){
+			if(belongsToEmployees){
 				$$('container6').toggleSplitter();
-				$('#container9').css('width','130px');
-				$('#container10').css({'left':'130px','width':'100%'});
-				if(belongsToEmployees)
-					$$('button4').disable();
+				$('#container9').css('width','71px');
+				$('#container10').css({'left':'71px','width':'100%'});
+				$('#container11').css('width','10%');
+				$$('button1').hide();
+				addUsrBtn.disable();
 			}
 		}
 	}
@@ -155,15 +155,21 @@ var belongsToEmployees;
 	function checkAdmin(){
 		if(!waf.directory.currentUserBelongsTo('Administrators')){
 			var comboRole =$$(cmp+'_combobox1');
-			var firstNameTxt =$$(cmp+'_textField5');
+			var firstNameTxt =$$(cmp+'_textField1');
 			var lastNameTxt = $$(cmp+'_textField6');
 			var birthTxt = $$(cmp+'_textField7');
 			var joinTxt =$$(cmp+'_textField9');
-			firstNameTxt.disable();
-			lastNameTxt.disable();
-			birthTxt.disable();
-			comboRole.disable();
-			joinTxt.disable();
+			
+			if(!firstNameTxt.isDisabled())
+				firstNameTxt.disable();
+			if(!lastNameTxt.isDisabled())
+				lastNameTxt.disable();
+			if(!birthTxt.isDisabled())
+				birthTxt.disable();
+			if(!comboRole.isDisabled())
+				comboRole.disable();
+			if(!joinTxt.isDisabled())
+				joinTxt.disable();
 		}else
 		{
 			userImg.clear();

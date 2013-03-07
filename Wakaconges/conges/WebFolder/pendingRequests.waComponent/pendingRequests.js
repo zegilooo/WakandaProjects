@@ -11,7 +11,7 @@ function constructor (id) {
 	// @endregion// @endlock
 	var  approvalCheck = $$(id+'_checkbox1');
 	this.load = function (data) {// @lock
-	this.show();
+
 	// @region namespaceDeclaration// @startlock
 	var button2 = {};	// @button
 	var button1 = {};	// @button
@@ -26,6 +26,7 @@ function constructor (id) {
 			approvalCheck.uncheck();
 			approvalCheck.disable();
 			sources.leaves1.serverRefresh();
+			
 		}
 	};// @lock
 

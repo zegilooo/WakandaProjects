@@ -11,13 +11,9 @@ function constructor (id) {
 	// @endregion// @endlock
 	var compFileUpload = $$(id+'_fileUpload1');
 	var comboRole =$$(id+'_combobox1');
-	var firstNameTxt =$$(id+'_textField5');
-	var lastNameTxt = $$(id+'_textField6');
-	var birthTxt = $$('_textField7');
-	var joinTxt =$$(id+'_textField9');
+
 	var latestLeavesLabel =$$(id+"_richText3");
 	var latestLeavesGrid = $$(id+"_dataGrid1");
-	var selectedRole = comboRole.getValue();
 	
 	this.load = function (data) {// @lock
 
@@ -27,7 +23,6 @@ function constructor (id) {
 	var image1 = {};	// @image
 	// @endregion// @endlock
 
-	//debugger;
 	//if a new employee is added, he do not have leaves
 		if(sources.employees.isNewElement()){
 			latestLeavesLabel.hide();
@@ -39,18 +34,17 @@ function constructor (id) {
 			latestLeavesGrid.show();
 		}
 	//this following code is a workaround in order to avoid the bug WAK0080044
-//	if(sources.employees.ID){
-//		sources.employees.Role.load({
-//					onSuccess:function(f){
-//						var key = f.entity.ID.getValue();
-//						sources.rolesEnum.selectByKey(key);
-//					}});
-//	}
+	if(sources.employees.ID){
+		sources.employees.Role.load({
+					onSuccess:function(f){
+						var key = f.entity.ID.getValue();
+						sources.rolesEnum.selectByKey(key);
+					}});
+	}
 	// eventHandlers// @lock
 
 	employeesEvent.onCurrentElementChange = function employeesEvent_onCurrentElementChange (event)// @startlock
 	{// @endlock
-		debugger;
 		if(!sources.employees.isNewElement()){
 			sources.employees.Role.load({
 					onSuccess:function(f){
@@ -62,20 +56,23 @@ function constructor (id) {
 
 	submit_btn.click = function submit_btn_click (event)// @startlock
 	{// @endlock
-	  ds.Company.find('ID="'+sessionStorage.currentCompany+'"',{'onSuccess':function(e){
-	  	sources.employees.company.set(e.entity);
-		sources.employees.Role.set(sources.rolesEnum);	
-		sources.employees.isManager = sources.rolesEnum.isManager;
-		sources.employees.serverRefresh();
-		sources.employees.save({
-				onSuccess: function(){
-					var uploaded = compFileUpload.getFiles();
-					if(uploaded.length!=0){
-						compFileUpload.uploadFiles();
+	  ds.Company.find('ID="'+sessionStorage.currentCompany+'"',
+	  	{'onSuccess':function(e){
+	  		sources.employees.company.set(e.entity);
+			sources.employees.Role.set(sources.rolesEnum);	
+			sources.employees.isManager = sources.rolesEnum.isManager;
+			sources.employees.serverRefresh();
+			sources.employees.save(
+				{
+					onSuccess: function(){
+						var uploaded = compFileUpload.getFiles();
+						if(uploaded.length!=0){
+							compFileUpload.uploadFiles();
+						}
 					}
-				}
-			});
-	  	}});
+				});
+		  	}
+	  	});
 	};// @lock
 
 	image1.click = function image1_click (event)// @startlock

@@ -47,14 +47,24 @@ guidedModel =// @startlock
 		},
 		methods :
 		{// @endlock
+			calculateOffDays:function(userID,leaveID)
+			{// @lock
+				var user = ds.Employees.find('ID = '+userID);
+				var leave = ds.Leaves.find('ID = '+ leaveID);
+				var offDays = user.offDays;
+				
+			},// @lock
 			leaveApproval:function(managerID,leaveID, approval)
 			{// @lock
 				var leaveToApprove = ds.Leaves.find('ID = ' + leaveID)
 				if(leaveToApprove){
 					leaveToApprove.approved = approval;
 					leaveToApprove.approvedBy = ds.Employees.find('ID = ' + managerID).fullName;
-					return leaveToApprove.save();
+					leaveToApprove.save();
+					return true
 				}
+				else 
+					return false;
 			},// @lock
 			checkEmployee:function(login,pwd,companyID)
 			{// @lock
