@@ -69,6 +69,7 @@ function constructor (id) {
 						if(uploaded.length!=0){
 							compFileUpload.uploadFiles();
 						}
+						calculateoffDays(sources.employees.ID);
 					}
 				});
 		  	}

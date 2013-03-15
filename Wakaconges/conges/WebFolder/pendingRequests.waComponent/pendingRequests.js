@@ -36,6 +36,7 @@ function constructor (id) {
 			approvalCheck.enable();
 			approvalCheck.check();
 			approvalCheck.disable();
+			ds.Employees.calculateConsumptedDays(sources.cmp_employees.ID,sources.leaves1.ID);
 			sources.leaves1.serverRefresh();
 		}
 	};// @lock

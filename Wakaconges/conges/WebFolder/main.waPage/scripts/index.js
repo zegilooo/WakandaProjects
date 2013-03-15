@@ -75,7 +75,6 @@ var belongsToEmployees;
 	documentEvent.onLoad = function documentEvent_onLoad (event)// @startlock
 	{// @endlock
 		currentUser = waf.directory.currentUser();
-		sources.currentuser.query('ID='+currentUser.ID);
 		if(currentUser!=null)
 		{
 			cmp="component1";
@@ -122,7 +121,7 @@ var belongsToEmployees;
 	//useful functions
 	function doAtLogIn(){
 		sources.cmp.sync();
-		
+		sources.currentuser.query('ID='+currentUser.ID);
 		checkRights();
 		if(belongsToAdmin){
 			addUsrBtn.show();
@@ -130,7 +129,7 @@ var belongsToEmployees;
 			$$('button4').hide();
 		}
 		else{
-			if(belongsToEmployees){
+			if(belongsToEmployees||belongsToManagers){
 				$$('container6').toggleSplitter();
 				$('#container9').css('width','71px');
 				$('#container10').css({'left':'71px','width':'100%'});
